@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration (locations = "classpath:META-INF/applicationContext.xml")
 public class HelloServiceTest {
-	@Resource
+	@Resource(name="helloImpl")
 	Hello hello;
 	
 	public void setHello(Hello hello) {

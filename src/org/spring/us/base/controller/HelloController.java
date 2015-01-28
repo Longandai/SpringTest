@@ -20,7 +20,4 @@ public class HelloController {
 //		model.addAttribute(user);
 		return  "hello";
 	}
-//	public User homeObg(){
-//		ret
-//	}
 }

@@ -1,6 +1,7 @@
 package org.spring.us.base.service.impl;
 
 import org.spring.us.base.service.Hello;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -11,8 +12,8 @@ import org.springframework.stereotype.Service;
  *
  */
 
-@Service
-@Component
+@Component("helloImpl")
+@Scope("prototype")
 public class HelloImpl implements Hello{
 
 	public String sayHello(String str) {
